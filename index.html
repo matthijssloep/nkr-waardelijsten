@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gegevensaanvraag / Data request</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cyan:      #11B5E9;
+      --teal:      #006D8C;
+      --heading:   #1a3a4a;
+      --text:      #333333;
+      --white:     #ffffff;
+      --font: "Avenir LT Std", "Avenir", Arial, Helvetica, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--white);
+    }
+
+    body {
+      font-family: var(--font);
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    /* ── Page wrapper ── */
+    .page {
+      display: flex;
+      justify-content: center;
+      padding: 48px 32px 80px;
+    }
+
+    .container {
+      display: flex;
+      gap: 48px;
+      max-width: 900px;
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    /* ── Left: main content ── */
+    .main {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--heading);
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    .lang-link {
+      display: inline-block;
+      color: var(--cyan);
+      font-size: 14px;
+      margin-bottom: 18px;
+      text-decoration: none;
+    }
+    .lang-link:hover { text-decoration: underline; }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 14.5px;
+    }
+
+    .tips-header {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-bottom: 16px;
+    }
+    li {
+      margin-bottom: 8px;
+      font-size: 14.5px;
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    strong { font-weight: 700; }
+
+    /* Primary CTA button */
+    .btn-primary {
+      display: inline-block;
+      background: var(--cyan);
+      color: var(--white);
+      font-family: var(--font);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 10px 20px;
+      border: 2px solid var(--cyan);
+      border-radius: 3px;
+      cursor: pointer;
+      margin-top: 6px;
+      text-decoration: none;
+      transition: background .15s, border-color .15s;
+    }
+    .btn-primary:hover {
+      background: #0da3d4;
+      border-color: #0da3d4;
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    /* ── Right: sidebar ── */
+    .sidebar {
+      flex: 0 0 320px;
+      min-width: 0;
+    }
+
+    .sidebar-section {
+      margin-bottom: 24px;
+    }
+
+    .sidebar-heading {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 8px;
+    }
+
+    .sidebar-links {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 16px;
+    }
+    .sidebar-links li {
+      margin-bottom: 2px;
+    }
+    .sidebar-links a {
+      font-size: 14px;
+      color: var(--cyan);
+    }
+
+    /* Buttons row */
+    .btn-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .btn-outline {
+      background: var(--white);
+      color: var(--heading);
+      font-family: var(--font);
+      font-size: 13.5px;
+      font-weight: 500;
+      padding: 9px 16px;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background .12s;
+    }
+    .btn-outline:hover {
+      background: #f5f5f5;
+      text-decoration: none;
+    }
+
+    .btn-filled {
+      background: var(--cyan);
+      color: var(--white);
+      font-family: var(--font);
+      font-size: 13.5px;
+      font-weight: 500;
+      padding: 9px 16px;
+      border: 1px solid var(--cyan);
+      border-radius: 3px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background .12s;
+    }
+    .btn-filled:hover {
+      background: #0da3d4;
+      text-decoration: none;
+    }
+
+    hr.sidebar-divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    /* New link highlight */
+    .new-link {
+      font-weight: 700;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 700px) {
+      .container { flex-direction: column; }
+      .sidebar { flex: none; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+    <div class="container">
+
+      <!-- Left: main content -->
+      <main class="main">
+        <h1>Gegevensaanvraag /<br>Data request</h1>
+
+        <a href="#" class="lang-link">English</a>
+
+        <p>U wenst gegevens uit de Nederlandse Kankerregistratie (NKR) te gebruiken voor wetenschappelijk onderzoek of statistiek. Via dit formulier kunt u een gegevensaanvraag indienen.</p>
+
+        <p class="tips-header"><strong>We geven u graag enkele tips voordat u start:</strong></p>
+
+        <ul>
+          <li>De beschikbare informatie verschilt per tumorsoort. Raadpleeg daarom vooraf de <a href="#">IKNL-datacatalogus</a> en het <a href="#">Overzicht itemsets NKR</a> om te zien welke gegevens beschikbaar zijn.</li>
+          <li>U kunt het formulier tussentijds opslaan via de knop <strong>'Voortgang opslaan'</strong>. Eerder opgeslagen formulieren kunt u terugzetten met <strong>'Voortgang laden'</strong>.</li>
+          <li>Velden gemarkeerd met een asterisk (*) zijn verplicht.</li>
+        </ul>
+
+        <p>De doorlooptijd van uw aanvraag hangt af van de complexiteit. Door het formulier zo volledig en concreet mogelijk in te vullen, helpt u ons om uw aanvraag sneller te verwerken.</p>
+
+        <a href="#" class="btn-primary">Duidelijk, naar het aanvraagformulier</a>
+      </main>
+
+      <!-- Right: sidebar -->
+      <aside class="sidebar">
+
+        <div class="sidebar-section">
+          <div class="sidebar-heading">Hulpmiddelen voor uw gegevensaanvraag</div>
+          <ul class="sidebar-links">
+            <li><a href="#">NKR cijfers</a></li>
+            <li><a href="#">Overzicht itemsets NKR</a></li>
+            <li><a href="#">NKR datacatalogus</a></li>
+            <li><a href="#">Synthetische dataset borstkanker</a></li>
+            <li><a href="waardelijsten.html" class="new-link">Waardelijsten</a></li>
+          </ul>
+
+          <div class="btn-row">
+            <a href="#" class="btn-outline">Voortgang opslaan</a>
+            <a href="#" class="btn-filled">Voortgang laden</a>
+          </div>
+        </div>
+
+        <hr class="sidebar-divider" />
+
+        <div class="sidebar-section">
+          <div class="sidebar-heading">Vragen of contact</div>
+          <a href="mailto:gegevensaanvraag@iknl.nl">gegevensaanvraag@iknl.nl</a>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+
+</body>
+</html>
