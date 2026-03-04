@@ -5,8 +5,9 @@
     "categorie": "NVT",
     "beschrijving": "Blasten in PB (%)",
     "type": "Numeriek (3,0)",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [],
     "notities": "Vereist formaat: 3,0"
@@ -17,8 +18,12 @@
     "categorie": "NVT",
     "beschrijving": "Hb (mmol/l)",
     "type": "Numeriek (4,1)",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "HL",
+      "MDS/MPN",
+      "Plasmacel"
     ],
     "waarden": [],
     "notities": "Vereist formaat: 4,1"
@@ -29,8 +34,12 @@
     "categorie": "NVT",
     "beschrijving": "Respons",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "HL",
+      "MDS/MPN",
+      "Plasmacel"
     ],
     "waarden": [
       {
@@ -94,8 +103,11 @@
     "categorie": "NVT",
     "beschrijving": "Trombocytengehalte (x10^9/l)",
     "type": "Numeriek (4,0)",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "MDS/MPN",
+      "Plasmacel"
     ],
     "waarden": [],
     "notities": "Vereist formaat: 4,0"
@@ -106,8 +118,10 @@
     "categorie": "NVT",
     "beschrijving": "Geëvalueerd op",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -151,8 +165,9 @@
     "categorie": "SCT",
     "beschrijving": "Bron autologe stamcel",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "Plasmacel"
     ],
     "waarden": [
       {
@@ -176,8 +191,9 @@
     "categorie": "SCT",
     "beschrijving": "Bron allogene stamcel",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -205,8 +221,9 @@
     "categorie": "SCT",
     "beschrijving": "Myeloablatief",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -230,8 +247,9 @@
     "categorie": "SCT",
     "beschrijving": "Donortype",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -271,8 +289,10 @@
     "categorie": "NVT",
     "beschrijving": "Immunologische MRD",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN",
+      "Plasmacel"
     ],
     "waarden": [
       {
@@ -296,7 +316,7 @@
     "categorie": "NVT",
     "beschrijving": "CNS",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -333,8 +353,9 @@
     "categorie": "NVT",
     "beschrijving": "ASXL1",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -358,7 +379,7 @@
     "categorie": "NVT",
     "beschrijving": "IDH1-2",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -391,8 +412,9 @@
     "categorie": "NVT",
     "beschrijving": "RUNX1",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -416,8 +438,9 @@
     "categorie": "NVT",
     "beschrijving": "NPM1",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -441,7 +464,7 @@
     "categorie": "NVT",
     "beschrijving": "FLT3-TKD",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -466,7 +489,7 @@
     "categorie": "NVT",
     "beschrijving": "FLT3-ITD",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -491,8 +514,9 @@
     "categorie": "NVT",
     "beschrijving": "CEBPA",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -520,7 +544,7 @@
     "categorie": "NVT",
     "beschrijving": "t(9;22) / BCR::ABL1",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -549,8 +573,9 @@
     "categorie": "NVT",
     "beschrijving": "NRAS",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -574,7 +599,7 @@
     "categorie": "NVT",
     "beschrijving": "t(8;21) / RUNX1::RUNX1T1",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -599,7 +624,7 @@
     "categorie": "NVT",
     "beschrijving": "inv(16)/t(16;16) / CBFB",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -628,7 +653,7 @@
     "categorie": "NVT",
     "beschrijving": "Ov. gedef. genafwijkingen",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -681,7 +706,7 @@
     "categorie": "NVT",
     "beschrijving": "t(11q23.3) / KMT2A",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -738,8 +763,9 @@
     "categorie": "NVT",
     "beschrijving": "inv(3)/t(3;3) MECOM/RPN::EVI1",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -779,7 +805,7 @@
     "categorie": "NVT",
     "beschrijving": "MDS-gerelateerde afwijkingen",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -828,7 +854,7 @@
     "categorie": "NVT",
     "beschrijving": "t(15;17) / PML::RARA",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -853,7 +879,7 @@
     "categorie": "NVT",
     "beschrijving": "Monosomaal karyotype",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -878,8 +904,9 @@
     "categorie": "NVT",
     "beschrijving": "del(5q) / monosomie 5",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -915,8 +942,9 @@
     "categorie": "NVT",
     "beschrijving": "del(7q) / monosomie 7",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -952,7 +980,7 @@
     "categorie": "NVT",
     "beschrijving": "TP53-mutatie (VAF)",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -977,8 +1005,9 @@
     "categorie": "NVT",
     "beschrijving": "Complex karyotype",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -1014,8 +1043,9 @@
     "categorie": "NVT",
     "beschrijving": "Moment responsbepaling",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -1171,7 +1201,7 @@
     "categorie": "NVT",
     "beschrijving": "Moleculaire MRD",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -1200,8 +1230,11 @@
     "categorie": "NVT",
     "beschrijving": "Leukocytengehalte (x10^9/l)",
     "type": "Numeriek (5,1)",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "HL",
+      "MDS/MPN"
     ],
     "waarden": [],
     "notities": "Vereist formaat: 5,1"
@@ -1212,8 +1245,9 @@
     "categorie": "NVT",
     "beschrijving": "Therapie-gerelateerd",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -1233,7 +1267,7 @@
     "categorie": "NVT",
     "beschrijving": "WT1 mutatie",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -1258,7 +1292,7 @@
     "categorie": "NVT",
     "beschrijving": "ETV6-r (elke fusie partner)",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -1283,7 +1317,7 @@
     "categorie": "NVT",
     "beschrijving": "NUP98-r (elke fusie partner)",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -1308,7 +1342,7 @@
     "categorie": "NVT",
     "beschrijving": "GATA1 mutatie",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -1333,7 +1367,7 @@
     "categorie": "NVT",
     "beschrijving": "UBTF tandem duplicatie (UBTF-TD)",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [
@@ -1358,8 +1392,9 @@
     "categorie": "NVT",
     "beschrijving": "KRAS",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -1383,8 +1418,9 @@
     "categorie": "NVT",
     "beschrijving": "DDX41",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -1408,8 +1444,9 @@
     "categorie": "NVT",
     "beschrijving": "DNMT3A",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [
       {
@@ -1433,8 +1470,11 @@
     "categorie": "NVT",
     "beschrijving": "Naam hematologiestudie",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "MDS/MPN",
+      "Plasmacel"
     ],
     "waarden": [
       {
@@ -2546,8 +2586,10 @@
     "categorie": "NVT",
     "beschrijving": "Neutrofielengehalte (x10^9/l)",
     "type": "Numeriek (5,1)",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "MDS/MPN"
     ],
     "waarden": [],
     "notities": "Vereist formaat: 5,1"
@@ -2558,8 +2600,9 @@
     "categorie": "NVT",
     "beschrijving": "Blasten in BM (%)",
     "type": "Numeriek (3,0)",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN"
     ],
     "waarden": [],
     "notities": "Vereist formaat: 3,0"
@@ -2570,7 +2613,7 @@
     "categorie": "OVERIG",
     "beschrijving": "Naam studie",
     "type": "geen validatie",
-    "beschikbaar_per_tumorsoort": [
+    "tumorsoorten": [
       "AML"
     ],
     "waarden": [],
@@ -2579,11 +2622,15 @@
   {
     "id": "99D16",
     "naam": "Aantal kuren",
-    "categorie": "CHEMO",
+    "categorie": "TARGET",
     "beschrijving": "Aantal kuren",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "HL",
+      "MDS/MPN",
+      "Plasmacel"
     ],
     "waarden": [
       {
@@ -2815,8 +2862,12 @@
     "categorie": "GEEN",
     "beschrijving": "Reden geen behandeling",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "HL",
+      "MDS/MPN",
+      "Plasmacel"
     ],
     "waarden": [
       {
@@ -2852,8 +2903,12 @@
     "categorie": "NVT",
     "beschrijving": "Laatste datum klinische informatie",
     "type": "Numeriek",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "HL",
+      "MDS/MPN",
+      "Plasmacel"
     ],
     "waarden": [],
     "notities": ""
@@ -2864,8 +2919,12 @@
     "categorie": "NVT",
     "beschrijving": "Performance status",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "HL",
+      "MDS/MPN",
+      "Plasmacel"
     ],
     "waarden": [
       {
@@ -2993,8 +3052,10 @@
     "categorie": "CHEMO",
     "beschrijving": "Toedieningswijze",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "MDS/MPN",
+      "Plasmacel"
     ],
     "waarden": [
       {
@@ -3042,8 +3103,12 @@
     "categorie": "NVT",
     "beschrijving": "Reden einde follow-up",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "CLL",
+      "HL",
+      "MDS/MPN",
+      "Plasmacel"
     ],
     "waarden": [
       {
@@ -3079,8 +3144,9 @@
     "categorie": "GEEN",
     "beschrijving": "Type behandeling",
     "type": "Categorisch",
-    "beschikbaar_per_tumorsoort": [
-      "AML"
+    "tumorsoorten": [
+      "AML",
+      "Plasmacel"
     ],
     "waarden": [
       {
@@ -3117,5 +3183,2344 @@
       }
     ],
     "notities": ""
+  },
+  {
+    "id": "77D196",
+    "naam": "TP53",
+    "categorie": "NVT",
+    "beschrijving": "TP53",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "CLL"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "positief"
+      },
+      {
+        "code": "2",
+        "label": "del(17p13), incl (T)P53"
+      },
+      {
+        "code": "3",
+        "label": "t(17p13), incl (T)P53"
+      },
+      {
+        "code": "4",
+        "label": "loss of heterozygosity chr 17p, incl (T)P53"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D199",
+    "naam": "IGHV",
+    "categorie": "NVT",
+    "beschrijving": "IGHV",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "CLL"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "2",
+        "label": "t(14q32), incl IgHV"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D206",
+    "naam": "del(13q14) / monosomie 13",
+    "categorie": "NVT",
+    "beschrijving": "del(13q14) / monosomie 13",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "CLL",
+      "Plasmacel"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "del(13q14)"
+      },
+      {
+        "code": "2",
+        "label": "del(13q), breukpunt onbekend"
+      },
+      {
+        "code": "3",
+        "label": "monosomie 13 (-13)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D22",
+    "naam": "Aantal aangedane lymfeklierstations",
+    "categorie": "NVT",
+    "beschrijving": "Aantal aangedane lymfeklierstations",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "CLL",
+      "HL"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen lymfeklierstations aangedaan"
+      },
+      {
+        "code": "1",
+        "label": "1 lymfeklierstation aangedaan"
+      },
+      {
+        "code": "2",
+        "label": "2 lymfeklierstations aangedaan"
+      },
+      {
+        "code": "3",
+        "label": "3 lymfeklierstations aangedaan"
+      },
+      {
+        "code": "4",
+        "label": "4 of meer lymfeklierstations aangedaan"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D23",
+    "naam": "Beenmerg positief",
+    "categorie": "NVT",
+    "beschrijving": "Beenmerg positief",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "CLL",
+      "HL"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "beenmerg niet aangedaan"
+      },
+      {
+        "code": "2",
+        "label": "beenmerg aangedaan o.b.v. PA"
+      },
+      {
+        "code": "3",
+        "label": "beenmerg aangedaan o.b.v. alleen beeldvorming"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D25",
+    "naam": "Hepatosplenomegalie",
+    "categorie": "NVT",
+    "beschrijving": "Hepatosplenomegalie",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "CLL",
+      "HL"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "nee"
+      },
+      {
+        "code": "1",
+        "label": "ja, hepatomegalie"
+      },
+      {
+        "code": "2",
+        "label": "ja, splenomegalie"
+      },
+      {
+        "code": "3",
+        "label": "ja, hepato- en splenomegalie"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D258",
+    "naam": "Trisomie 12",
+    "categorie": "NVT",
+    "beschrijving": "Trisomie 12",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "CLL"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig (+12)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D26",
+    "naam": "Verhoogd LDH",
+    "categorie": "NVT",
+    "beschrijving": "Verhoogd LDH",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "CLL",
+      "HL",
+      "Plasmacel"
+    ],
+    "waarden": [
+      {
+        "code": "-1",
+        "label": "<0,67 N (bij mantelcellymfoom)"
+      },
+      {
+        "code": "0",
+        "label": "niet verhoogd"
+      },
+      {
+        "code": "1",
+        "label": "wel verhoogd"
+      },
+      {
+        "code": "2",
+        "label": ">1,5 N (bij mantelcellymfoom)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D261",
+    "naam": "del(11q)",
+    "categorie": "NVT",
+    "beschrijving": "del(11q)",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "CLL",
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "nee"
+      },
+      {
+        "code": "1",
+        "label": "ja"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D37",
+    "naam": "Lymfocytengehalte (x10^9/l)",
+    "categorie": "NVT",
+    "beschrijving": "Lymfocytengehalte (x10^9/l)",
+    "type": "Numeriek (5,1)",
+    "tumorsoorten": [
+      "CLL",
+      "HL"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 5,1"
+  },
+  {
+    "id": "77D38",
+    "naam": "Lymfocyten (%)",
+    "categorie": "NVT",
+    "beschrijving": "Lymfocyten (%)",
+    "type": "Numeriek (3,0)",
+    "tumorsoorten": [
+      "CLL"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 3,0"
+  },
+  {
+    "id": "77D39",
+    "naam": "Perifeer bloed positief",
+    "categorie": "NVT",
+    "beschrijving": "Perifeer bloed positief",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "CLL"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "niet aangedaan"
+      },
+      {
+        "code": "1",
+        "label": "wel aangedaan"
+      },
+      {
+        "code": "8",
+        "label": "niet bepaald"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D42",
+    "naam": "Beta2-microglobuline (mg/l)",
+    "categorie": "NVT",
+    "beschrijving": "Beta2-microglobuline (mg/l)",
+    "type": "Numeriek (5,2)",
+    "tumorsoorten": [
+      "CLL",
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 5,2"
+  },
+  {
+    "id": "77D61",
+    "naam": "Kreatinine (µmol/l)",
+    "categorie": "NVT",
+    "beschrijving": "Kreatinine (µmol/l)",
+    "type": "Numeriek (4,0)",
+    "tumorsoorten": [
+      "CLL",
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 4,0"
+  },
+  {
+    "id": "99D18",
+    "naam": "Totale dosis",
+    "categorie": "RT",
+    "beschrijving": "Totale dosis",
+    "type": "Numeriek (7,2)",
+    "tumorsoorten": [
+      "CLL",
+      "HL",
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 7,2"
+  },
+  {
+    "id": "77D1",
+    "naam": "Klinische symptomen",
+    "categorie": "NVT",
+    "beschrijving": "Klinische symptomen",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [
+      {
+        "code": "A",
+        "label": "zonder klinische symptomen"
+      },
+      {
+        "code": "B",
+        "label": "met klinische symptomen (1 of meer)"
+      },
+      {
+        "code": "X",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D223",
+    "naam": "Immunodeficiëntie/dysregul.",
+    "categorie": "NVT",
+    "beschrijving": "Immunodeficiëntie/dysregul.",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "nee"
+      },
+      {
+        "code": "1",
+        "label": "post-transplantatie"
+      },
+      {
+        "code": "2",
+        "label": "HIV"
+      },
+      {
+        "code": "3",
+        "label": "auto-immuunziekte"
+      },
+      {
+        "code": "4",
+        "label": "aangeboren"
+      },
+      {
+        "code": "5",
+        "label": "overig"
+      },
+      {
+        "code": "6",
+        "label": "post-CAR-T"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D24",
+    "naam": "Aantal extranodale lokalisaties",
+    "categorie": "NVT",
+    "beschrijving": "Aantal extranodale lokalisaties",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen extranodale lokalisaties aangedaan"
+      },
+      {
+        "code": "1",
+        "label": "1 extranodale lokalisatie aangedaan"
+      },
+      {
+        "code": "2",
+        "label": "2 of meer extranodale lokalisaties aangedaan"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D34",
+    "naam": "Bestraalde klierstations 1",
+    "categorie": "RT",
+    "beschrijving": "Bestraalde klierstations 1",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [
+      {
+        "code": "10",
+        "label": "supraclaviculair, rechts"
+      },
+      {
+        "code": "11",
+        "label": "infraclaviculair, links"
+      },
+      {
+        "code": "12",
+        "label": "infraclaviculair, rechts"
+      },
+      {
+        "code": "13",
+        "label": "oksel, links"
+      },
+      {
+        "code": "14",
+        "label": "oksel, rechts"
+      },
+      {
+        "code": "15",
+        "label": "mediastinum, nno"
+      },
+      {
+        "code": "16",
+        "label": "bovenste mediastinum"
+      },
+      {
+        "code": "17",
+        "label": "onderste mediastinum"
+      },
+      {
+        "code": "18",
+        "label": "long, links"
+      },
+      {
+        "code": "19",
+        "label": "long, rechts"
+      },
+      {
+        "code": "20",
+        "label": "para-aortaal"
+      },
+      {
+        "code": "21",
+        "label": "milt"
+      },
+      {
+        "code": "22",
+        "label": "iliacaal, links"
+      },
+      {
+        "code": "23",
+        "label": "iliacaal, rechts"
+      },
+      {
+        "code": "24",
+        "label": "lies, links"
+      },
+      {
+        "code": "25",
+        "label": "lies, rechts"
+      },
+      {
+        "code": "30",
+        "label": "overig"
+      },
+      {
+        "code": "31",
+        "label": "hals, bdz"
+      },
+      {
+        "code": "32",
+        "label": "supraclaviculair, bdz"
+      },
+      {
+        "code": "33",
+        "label": "infraclaviculair, bdz"
+      },
+      {
+        "code": "34",
+        "label": "oksel, bdz"
+      },
+      {
+        "code": "35",
+        "label": "long, bdz"
+      },
+      {
+        "code": "36",
+        "label": "iliacaal, bdz"
+      },
+      {
+        "code": "37",
+        "label": "lies, bdz"
+      },
+      {
+        "code": "7",
+        "label": "hals, links"
+      },
+      {
+        "code": "8",
+        "label": "hals, rechts"
+      },
+      {
+        "code": "9",
+        "label": "supraclaviculair, links"
+      },
+      {
+        "code": "99",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D35",
+    "naam": "Bestraalde klierstations 2",
+    "categorie": "RT",
+    "beschrijving": "Bestraalde klierstations 2",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [
+      {
+        "code": "10",
+        "label": "supraclaviculair, rechts"
+      },
+      {
+        "code": "11",
+        "label": "infraclaviculair, links"
+      },
+      {
+        "code": "12",
+        "label": "infraclaviculair, rechts"
+      },
+      {
+        "code": "13",
+        "label": "oksel, links"
+      },
+      {
+        "code": "14",
+        "label": "oksel, rechts"
+      },
+      {
+        "code": "15",
+        "label": "mediastinum, nno"
+      },
+      {
+        "code": "16",
+        "label": "bovenste mediastinum"
+      },
+      {
+        "code": "17",
+        "label": "onderste mediastinum"
+      },
+      {
+        "code": "18",
+        "label": "long, links"
+      },
+      {
+        "code": "19",
+        "label": "long, rechts"
+      },
+      {
+        "code": "20",
+        "label": "para-aortaal"
+      },
+      {
+        "code": "21",
+        "label": "milt"
+      },
+      {
+        "code": "22",
+        "label": "iliacaal, links"
+      },
+      {
+        "code": "23",
+        "label": "iliacaal, rechts"
+      },
+      {
+        "code": "24",
+        "label": "lies, links"
+      },
+      {
+        "code": "25",
+        "label": "lies, rechts"
+      },
+      {
+        "code": "30",
+        "label": "overig"
+      },
+      {
+        "code": "31",
+        "label": "hals, bdz"
+      },
+      {
+        "code": "32",
+        "label": "supraclaviculair, bdz"
+      },
+      {
+        "code": "33",
+        "label": "infraclaviculair, bdz"
+      },
+      {
+        "code": "34",
+        "label": "oksel, bdz"
+      },
+      {
+        "code": "35",
+        "label": "long, bdz"
+      },
+      {
+        "code": "36",
+        "label": "iliacaal, bdz"
+      },
+      {
+        "code": "37",
+        "label": "lies, bdz"
+      },
+      {
+        "code": "7",
+        "label": "hals, links"
+      },
+      {
+        "code": "8",
+        "label": "hals, rechts"
+      },
+      {
+        "code": "88",
+        "label": "n.v.t."
+      },
+      {
+        "code": "9",
+        "label": "supraclaviculair, links"
+      },
+      {
+        "code": "99",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D60",
+    "naam": "Albumine (g/l)",
+    "categorie": "NVT",
+    "beschrijving": "Albumine (g/l)",
+    "type": "Numeriek (5,1)",
+    "tumorsoorten": [
+      "HL",
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 5,1"
+  },
+  {
+    "id": "77D68",
+    "naam": "Bezinking / BSE (mm/uur)",
+    "categorie": "NVT",
+    "beschrijving": "Bezinking / BSE (mm/uur)",
+    "type": "Numeriek (3,0)",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 3,0"
+  },
+  {
+    "id": "77D72",
+    "naam": "Bestraalde klierstations 3",
+    "categorie": "RT",
+    "beschrijving": "Bestraalde klierstations 3",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [
+      {
+        "code": "10",
+        "label": "supraclaviculair, rechts"
+      },
+      {
+        "code": "11",
+        "label": "infraclaviculair, links"
+      },
+      {
+        "code": "12",
+        "label": "infraclaviculair, rechts"
+      },
+      {
+        "code": "13",
+        "label": "oksel, links"
+      },
+      {
+        "code": "14",
+        "label": "oksel, rechts"
+      },
+      {
+        "code": "15",
+        "label": "mediastinum, nno"
+      },
+      {
+        "code": "16",
+        "label": "bovenste mediastinum"
+      },
+      {
+        "code": "17",
+        "label": "onderste mediastinum"
+      },
+      {
+        "code": "18",
+        "label": "long, links"
+      },
+      {
+        "code": "19",
+        "label": "long, rechts"
+      },
+      {
+        "code": "20",
+        "label": "para-aortaal"
+      },
+      {
+        "code": "21",
+        "label": "milt"
+      },
+      {
+        "code": "22",
+        "label": "iliacaal, links"
+      },
+      {
+        "code": "23",
+        "label": "iliacaal, rechts"
+      },
+      {
+        "code": "24",
+        "label": "lies, links"
+      },
+      {
+        "code": "25",
+        "label": "lies, rechts"
+      },
+      {
+        "code": "30",
+        "label": "overig"
+      },
+      {
+        "code": "31",
+        "label": "hals, bdz"
+      },
+      {
+        "code": "32",
+        "label": "supraclaviculair, bdz"
+      },
+      {
+        "code": "33",
+        "label": "infraclaviculair, bdz"
+      },
+      {
+        "code": "34",
+        "label": "oksel, bdz"
+      },
+      {
+        "code": "35",
+        "label": "long, bdz"
+      },
+      {
+        "code": "36",
+        "label": "iliacaal, bdz"
+      },
+      {
+        "code": "37",
+        "label": "lies, bdz"
+      },
+      {
+        "code": "7",
+        "label": "hals, links"
+      },
+      {
+        "code": "8",
+        "label": "hals, rechts"
+      },
+      {
+        "code": "88",
+        "label": "n.v.t."
+      },
+      {
+        "code": "9",
+        "label": "supraclaviculair, links"
+      },
+      {
+        "code": "99",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "99D19",
+    "naam": "Bestralingsveld",
+    "categorie": "RT",
+    "beschrijving": "Bestralingsveld",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [
+      {
+        "code": "1",
+        "label": "involved field"
+      },
+      {
+        "code": "2",
+        "label": "involved node"
+      },
+      {
+        "code": "3",
+        "label": "mantelveld"
+      },
+      {
+        "code": "4",
+        "label": "omgekeerde Y-veld"
+      },
+      {
+        "code": "5",
+        "label": "totale lymphoïde irradiatie"
+      },
+      {
+        "code": "6",
+        "label": "totale lichaamsbestraling (low dose)"
+      },
+      {
+        "code": "7",
+        "label": "involved site"
+      },
+      {
+        "code": "88",
+        "label": "anders"
+      },
+      {
+        "code": "99",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "99D20",
+    "naam": "Aantal fracties",
+    "categorie": "RT",
+    "beschrijving": "Aantal fracties",
+    "type": "Numeriek (2,0)",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 2,0"
+  },
+  {
+    "id": "99D21",
+    "naam": "Dosis per fractie",
+    "categorie": "RT",
+    "beschrijving": "Dosis per fractie",
+    "type": "Numeriek (6,2)",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 6,2"
+  },
+  {
+    "id": "99D22",
+    "naam": "Dosis surdosage/boost",
+    "categorie": "RT",
+    "beschrijving": "Dosis surdosage/boost",
+    "type": "Numeriek (6,2)",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 6,2"
+  },
+  {
+    "id": "99DREV1",
+    "naam": "Datum revisie",
+    "categorie": "NVT",
+    "beschrijving": "Datum revisie",
+    "type": "Numeriek",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [],
+    "notities": ""
+  },
+  {
+    "id": "99DREV2",
+    "naam": "Diagnose vóór revisie",
+    "categorie": "NVT",
+    "beschrijving": "Diagnose vóór revisie",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "HL"
+    ],
+    "waarden": [
+      {
+        "code": "C00",
+        "label": "lipkanker"
+      },
+      {
+        "code": "C06",
+        "label": "kanker van de mondholte"
+      },
+      {
+        "code": "C08",
+        "label": "speekselklierkanker"
+      },
+      {
+        "code": "C10",
+        "label": "orofarynxkanker"
+      },
+      {
+        "code": "C11",
+        "label": "nasofarynxkanker"
+      },
+      {
+        "code": "C13",
+        "label": "hypofarynxkanker"
+      },
+      {
+        "code": "C15",
+        "label": "slokdarmkanker"
+      },
+      {
+        "code": "C16",
+        "label": "maagkanker"
+      },
+      {
+        "code": "C17",
+        "label": "dunnedarmkanker"
+      },
+      {
+        "code": "C18",
+        "label": "dikkedarmkanker"
+      },
+      {
+        "code": "C20",
+        "label": "endeldarmkanker"
+      },
+      {
+        "code": "C21",
+        "label": "anuskanker"
+      },
+      {
+        "code": "C22",
+        "label": "leverkanker"
+      },
+      {
+        "code": "C23",
+        "label": "galblaaskanker"
+      },
+      {
+        "code": "C24",
+        "label": "galwegkanker"
+      },
+      {
+        "code": "C25",
+        "label": "alvleesklierkanker"
+      },
+      {
+        "code": "C31",
+        "label": "kanker van de neus(bij)holte"
+      },
+      {
+        "code": "C32",
+        "label": "strottenhoofdkanker"
+      },
+      {
+        "code": "C33",
+        "label": "kanker van de luchtpijp"
+      },
+      {
+        "code": "C34",
+        "label": "longkanker"
+      },
+      {
+        "code": "C37",
+        "label": "thymuskanker"
+      },
+      {
+        "code": "C41",
+        "label": "botkanker"
+      },
+      {
+        "code": "C43",
+        "label": "melanoom"
+      },
+      {
+        "code": "C44",
+        "label": "huidkanker (excl. melanoom)"
+      },
+      {
+        "code": "C45",
+        "label": "mesothelioom"
+      },
+      {
+        "code": "C46",
+        "label": "kaposisarcoom"
+      },
+      {
+        "code": "C49",
+        "label": "kanker van de weke delen"
+      },
+      {
+        "code": "C50",
+        "label": "borstkanker"
+      },
+      {
+        "code": "C51",
+        "label": "schaamlipkanker"
+      },
+      {
+        "code": "C52",
+        "label": "vaginakanker"
+      },
+      {
+        "code": "C53",
+        "label": "baarmoederhalskanker"
+      },
+      {
+        "code": "C54",
+        "label": "baarmoederkanker"
+      },
+      {
+        "code": "C56",
+        "label": "eierstokkanker"
+      },
+      {
+        "code": "C57",
+        "label": "kanker van de overige vrouwelijke geslachtsorganen"
+      },
+      {
+        "code": "C58",
+        "label": "choriocarcinoom van de placenta"
+      },
+      {
+        "code": "C60",
+        "label": "peniskanker"
+      },
+      {
+        "code": "C61",
+        "label": "prostaatkanker"
+      },
+      {
+        "code": "C62",
+        "label": "zaadbalkanker"
+      },
+      {
+        "code": "C64",
+        "label": "nierkanker"
+      },
+      {
+        "code": "C65",
+        "label": "nierbekkenkanker"
+      },
+      {
+        "code": "C66",
+        "label": "ureterkanker"
+      },
+      {
+        "code": "C67",
+        "label": "blaaskanker"
+      },
+      {
+        "code": "C68",
+        "label": "kanker van de overige urinewegen"
+      },
+      {
+        "code": "C69",
+        "label": "oogkanker"
+      },
+      {
+        "code": "C70",
+        "label": "maligne tumor van de hersenvliezen"
+      },
+      {
+        "code": "C71",
+        "label": "maligne hersentumor"
+      },
+      {
+        "code": "C72",
+        "label": "kanker van het overige centraal zenuwstelsel"
+      },
+      {
+        "code": "C73",
+        "label": "schildklierkanker"
+      },
+      {
+        "code": "C74",
+        "label": "bijnierkanker"
+      },
+      {
+        "code": "C75",
+        "label": "kanker van overige endocriene klieren"
+      },
+      {
+        "code": "C81",
+        "label": "hodgkinlymfoom"
+      },
+      {
+        "code": "C85",
+        "label": "non-hodgkinlymfoom"
+      },
+      {
+        "code": "C90",
+        "label": "plasmaceltumor"
+      },
+      {
+        "code": "C91",
+        "label": "lymfatische leukemie"
+      },
+      {
+        "code": "C94",
+        "label": "myeloïde leukemie"
+      },
+      {
+        "code": "C95",
+        "label": "ongespecificeerde leukemie"
+      },
+      {
+        "code": "C96",
+        "label": "overige en niet-gespecificeerde hematologische maligniteiten"
+      },
+      {
+        "code": "D42",
+        "label": "niet-maligne tumor van de hersenvliezen"
+      },
+      {
+        "code": "D43",
+        "label": "niet-maligne tumor van het centraal zenuwstelsel"
+      },
+      {
+        "code": "D46",
+        "label": "myelodysplastisch syndroom"
+      },
+      {
+        "code": "D47",
+        "label": "myeloproliferatieve maligniteit"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D14",
+    "naam": "Cellulariteit",
+    "categorie": "NVT",
+    "beschrijving": "Cellulariteit",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "1",
+        "label": "laag"
+      },
+      {
+        "code": "2",
+        "label": "matig"
+      },
+      {
+        "code": "3",
+        "label": "matig-normaal"
+      },
+      {
+        "code": "4",
+        "label": "normaal"
+      },
+      {
+        "code": "5",
+        "label": "normaal-hoog"
+      },
+      {
+        "code": "6",
+        "label": "hoog"
+      },
+      {
+        "code": "8",
+        "label": "niet beoordeeld"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D15",
+    "naam": "Fibrose",
+    "categorie": "NVT",
+    "beschrijving": "Fibrose",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "nee"
+      },
+      {
+        "code": "1",
+        "label": "graad 1"
+      },
+      {
+        "code": "2",
+        "label": "graad 2"
+      },
+      {
+        "code": "3",
+        "label": "graad 3"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D16",
+    "naam": "Dyserytropoëse",
+    "categorie": "NVT",
+    "beschrijving": "Dyserytropoëse",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "nee (<10% dysplasie)"
+      },
+      {
+        "code": "1",
+        "label": "ja (>=10% dysplasie)"
+      },
+      {
+        "code": "2",
+        "label": "ja (percentage dysplasie onbekend)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D17",
+    "naam": "Dysmegakaryopoëse",
+    "categorie": "NVT",
+    "beschrijving": "Dysmegakaryopoëse",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "nee (<10% dysplasie)"
+      },
+      {
+        "code": "1",
+        "label": "ja (>=10% dysplasie)"
+      },
+      {
+        "code": "2",
+        "label": "ja (percentage dysplasie onbekend)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D18",
+    "naam": "Dysgranulopoëse",
+    "categorie": "NVT",
+    "beschrijving": "Dysgranulopoëse",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "nee (<10% dysplasie)"
+      },
+      {
+        "code": "1",
+        "label": "ja (>=10% dysplasie)"
+      },
+      {
+        "code": "2",
+        "label": "ja (percentage dysplasie onbekend)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D19",
+    "naam": "Auerse staafjes",
+    "categorie": "NVT",
+    "beschrijving": "Auerse staafjes",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "nee"
+      },
+      {
+        "code": "1",
+        "label": "ja"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D20",
+    "naam": "Ringsideroblasten (%)",
+    "categorie": "NVT",
+    "beschrijving": "Ringsideroblasten (%)",
+    "type": "Numeriek (3,0)",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 3,0"
+  },
+  {
+    "id": "77D209",
+    "naam": "JAK2",
+    "categorie": "NVT",
+    "beschrijving": "JAK2",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "JAK2 V617F mutatie"
+      },
+      {
+        "code": "2",
+        "label": "JAK2 exon12 mutatie"
+      },
+      {
+        "code": "7",
+        "label": "anders"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D21",
+    "naam": "Ferritine (µg/l)",
+    "categorie": "NVT",
+    "beschrijving": "Ferritine (µg/l)",
+    "type": "Numeriek (4,0)",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 4,0"
+  },
+  {
+    "id": "77D210",
+    "naam": "CALR",
+    "categorie": "NVT",
+    "beschrijving": "CALR",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D211",
+    "naam": "MPL",
+    "categorie": "NVT",
+    "beschrijving": "MPL",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig, nno"
+      },
+      {
+        "code": "2",
+        "label": "MPL-mutatie op codon 505"
+      },
+      {
+        "code": "3",
+        "label": "MPL-mutatie op codon 515"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D226",
+    "naam": "SF3B1",
+    "categorie": "NVT",
+    "beschrijving": "SF3B1",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D227",
+    "naam": "CSF3R",
+    "categorie": "NVT",
+    "beschrijving": "CSF3R",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D228",
+    "naam": "ETNK1",
+    "categorie": "NVT",
+    "beschrijving": "ETNK1",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D229",
+    "naam": "SETBP1",
+    "categorie": "NVT",
+    "beschrijving": "SETBP1",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D248",
+    "naam": "Monosomie Y",
+    "categorie": "NVT",
+    "beschrijving": "Monosomie Y",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D250",
+    "naam": "del(17p) / TP53 / -17",
+    "categorie": "NVT",
+    "beschrijving": "del(17p) / TP53 / -17",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN",
+      "Plasmacel"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "del(17p13) (+/-TP53)"
+      },
+      {
+        "code": "2",
+        "label": "t(17p13) (+/-TP53)"
+      },
+      {
+        "code": "3",
+        "label": "loss of heterozygosity 17p (+/- TP53)"
+      },
+      {
+        "code": "4",
+        "label": "TP53"
+      },
+      {
+        "code": "5",
+        "label": "monosomie 17 (-17)"
+      },
+      {
+        "code": "6",
+        "label": "i(17q) (isochromosoom 17q)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D251",
+    "naam": "TP53-inactivatie",
+    "categorie": "NVT",
+    "beschrijving": "TP53-inactivatie",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "2",
+        "label": "mono-allelisch"
+      },
+      {
+        "code": "3",
+        "label": "bi-allelisch/multihit"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D253",
+    "naam": "del(12q)",
+    "categorie": "NVT",
+    "beschrijving": "del(12q)",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D254",
+    "naam": "del(20q)",
+    "categorie": "NVT",
+    "beschrijving": "del(20q)",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D256",
+    "naam": "Trisomie 8",
+    "categorie": "NVT",
+    "beschrijving": "Trisomie 8",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig (+8)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D259",
+    "naam": "Trisomie 19",
+    "categorie": "NVT",
+    "beschrijving": "Trisomie 19",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig (+19)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D260",
+    "naam": "del(3q)",
+    "categorie": "NVT",
+    "beschrijving": "del(3q)",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D363",
+    "naam": "del(12p)",
+    "categorie": "NVT",
+    "beschrijving": "del(12p)",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D6",
+    "naam": "Persisterende monocytose",
+    "categorie": "NVT",
+    "beschrijving": "Persisterende monocytose",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "MDS/MPN"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "nee"
+      },
+      {
+        "code": "1",
+        "label": "ja"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D204",
+    "naam": "t(14q32)",
+    "categorie": "NVT",
+    "beschrijving": "t(14q32)",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "t(14q32) / IGHV"
+      },
+      {
+        "code": "2",
+        "label": "t(11;14)"
+      },
+      {
+        "code": "3",
+        "label": "t(4;14)"
+      },
+      {
+        "code": "4",
+        "label": "t(14;16)"
+      },
+      {
+        "code": "5",
+        "label": "t(14;20)"
+      },
+      {
+        "code": "6",
+        "label": "t(4;14) en t(14;16)"
+      },
+      {
+        "code": "8",
+        "label": "anders, bijv. t(6;14)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D207",
+    "naam": "Chromosoom 1 afw.",
+    "categorie": "NVT",
+    "beschrijving": "Chromosoom 1 afw.",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "add(1q)"
+      },
+      {
+        "code": "2",
+        "label": "del(1p)"
+      },
+      {
+        "code": "3",
+        "label": "add(1q) en del(1p)"
+      },
+      {
+        "code": "4",
+        "label": "monosomie 1 (-1)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D208",
+    "naam": "Hyperdiploïdie",
+    "categorie": "NVT",
+    "beschrijving": "Hyperdiploïdie",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "aanwezig (>46 chromosomen)"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D284",
+    "naam": "Calcium gecorrigeerd",
+    "categorie": "NVT",
+    "beschrijving": "Calcium gecorrigeerd",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "nee"
+      },
+      {
+        "code": "1",
+        "label": "ja"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D312",
+    "naam": "% plasmacellen in bloed",
+    "categorie": "NVT",
+    "beschrijving": "% plasmacellen in bloed",
+    "type": "Numeriek (3,0)",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 3,0"
+  },
+  {
+    "id": "77D318",
+    "naam": "CAR-T celproduct",
+    "categorie": "OVERIG",
+    "beschrijving": "CAR-T celproduct",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [
+      {
+        "code": "1",
+        "label": "Ziekenhuis geproduceerd"
+      },
+      {
+        "code": "7",
+        "label": "Anders"
+      },
+      {
+        "code": "9",
+        "label": "Onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D49",
+    "naam": "Aantal botlaesies",
+    "categorie": "NVT",
+    "beschrijving": "Aantal botlaesies",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen afwijking"
+      },
+      {
+        "code": "1",
+        "label": "1botlaesie"
+      },
+      {
+        "code": "2",
+        "label": "2botlaesies"
+      },
+      {
+        "code": "3",
+        "label": "3of meer botlaesies"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D50",
+    "naam": "Extramedullaire plasmacytomen",
+    "categorie": "NVT",
+    "beschrijving": "Extramedullaire plasmacytomen",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [
+      {
+        "code": "0",
+        "label": "geen extramedullair plasmacytoom"
+      },
+      {
+        "code": "1",
+        "label": "1 extramedullair plasmacytoom"
+      },
+      {
+        "code": "2",
+        "label": "2 extramedullaire plasmacytomen"
+      },
+      {
+        "code": "3",
+        "label": "3 extramedullaire plasmacytomen"
+      },
+      {
+        "code": "4",
+        "label": "4 extramedullaire plasmacytomen"
+      },
+      {
+        "code": "5",
+        "label": "5 extramedullaire plasmacytomen"
+      },
+      {
+        "code": "6",
+        "label": "6 of meer extramedullaire plasmacytomen"
+      },
+      {
+        "code": "9",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D51",
+    "naam": "Plasmacellen in BM (%)",
+    "categorie": "NVT",
+    "beschrijving": "Plasmacellen in BM (%)",
+    "type": "Numeriek (2,0)",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 2,0"
+  },
+  {
+    "id": "77D52",
+    "naam": "Type M-component",
+    "categorie": "NVT",
+    "beschrijving": "Type M-component",
+    "type": "Categorisch",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [
+      {
+        "code": "1",
+        "label": "IgM–kappa"
+      },
+      {
+        "code": "10",
+        "label": "non-secretoir"
+      },
+      {
+        "code": "11",
+        "label": "light chain disease–kappa"
+      },
+      {
+        "code": "12",
+        "label": "light chain disease–lambda"
+      },
+      {
+        "code": "2",
+        "label": "IgM–lambda"
+      },
+      {
+        "code": "3",
+        "label": "IgG–kappa"
+      },
+      {
+        "code": "4",
+        "label": "IgG–lambda"
+      },
+      {
+        "code": "5",
+        "label": "IgA–kappa"
+      },
+      {
+        "code": "6",
+        "label": "IgA–lambda"
+      },
+      {
+        "code": "7",
+        "label": "IgD"
+      },
+      {
+        "code": "8",
+        "label": "IgE"
+      },
+      {
+        "code": "88",
+        "label": "biclonaal"
+      },
+      {
+        "code": "9",
+        "label": "light chain disease"
+      },
+      {
+        "code": "99",
+        "label": "onbekend"
+      }
+    ],
+    "notities": ""
+  },
+  {
+    "id": "77D53",
+    "naam": "Serum M-proteïne (g/l)",
+    "categorie": "NVT",
+    "beschrijving": "Serum M-proteïne (g/l)",
+    "type": "Numeriek (5,1)",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 5,1"
+  },
+  {
+    "id": "77D54",
+    "naam": "Serum IgG (g/l)",
+    "categorie": "NVT",
+    "beschrijving": "Serum IgG (g/l)",
+    "type": "Numeriek (5,1)",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 5,1"
+  },
+  {
+    "id": "77D55",
+    "naam": "Serum IgA (g/l)",
+    "categorie": "NVT",
+    "beschrijving": "Serum IgA (g/l)",
+    "type": "Numeriek (5,1)",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 5,1"
+  },
+  {
+    "id": "77D56",
+    "naam": "Serum IgM (g/l)",
+    "categorie": "NVT",
+    "beschrijving": "Serum IgM (g/l)",
+    "type": "Numeriek (5,1)",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 5,1"
+  },
+  {
+    "id": "77D57",
+    "naam": "Serum LK: kappa (mg/l)",
+    "categorie": "NVT",
+    "beschrijving": "Serum LK: kappa (mg/l)",
+    "type": "Numeriek (8,1)",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 8,1"
+  },
+  {
+    "id": "77D58",
+    "naam": "Serum LK: lambda (mg/l)",
+    "categorie": "NVT",
+    "beschrijving": "Serum LK: lambda (mg/l)",
+    "type": "Numeriek (8,1)",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 8,1"
+  },
+  {
+    "id": "77D62",
+    "naam": "Serum calcium (mmol/l)",
+    "categorie": "NVT",
+    "beschrijving": "Serum calcium (mmol/l)",
+    "type": "Numeriek (4,2)",
+    "tumorsoorten": [
+      "Plasmacel"
+    ],
+    "waarden": [],
+    "notities": "Vereist formaat: 4,2"
   }
 ]

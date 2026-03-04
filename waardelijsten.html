@@ -134,6 +134,39 @@
     }
 
     /* Category filters */
+    /* Tumor filter */
+    .tumor-filter {
+      padding: 10px 16px 6px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .tumor-filter-label {
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 7px;
+    }
+    .tumor-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .tumor-chip {
+      font-size: 11.5px;
+      font-family: var(--font);
+      padding: 3px 9px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      color: var(--muted);
+      cursor: pointer;
+      transition: background .1s, color .1s, border-color .1s;
+    }
+    .tumor-chip:hover { background: var(--cyan-light); border-color: var(--cyan); color: var(--teal); }
+    .tumor-chip.active { background: var(--cyan); border-color: var(--cyan); color: var(--white); font-weight: 700; }
+
     .cat-list {
       flex: 1;
       overflow-y: auto;
@@ -446,8 +479,12 @@
 
     <!-- LEFT: category filter -->
     <nav class="panel-left">
+      <div class="tumor-filter">
+        <div class="tumor-filter-label">Tumorsoort</div>
+        <div class="tumor-chips" id="tumor-chips"></div>
+      </div>
       <div class="panel-left-head">
-        <h2>Zoeken &amp; filteren</h2>
+        <h2>Categorie</h2>
         <div class="search-wrap">
           <svg viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
@@ -486,19 +523,49 @@
   <script>
     let allVars = window.WAARDELIJSTEN || [];
     let activeCategory = null;
+    let activeTumor = null;
     let selectedId = null;
     let searchQuery = '';
 
+    renderTumorChips();
     renderCategories();
     renderList();
+
+    // ── Tumor chips ──
+    function renderTumorChips() {
+      const tumors = [...new Set(allVars.flatMap(v => v.tumorsoorten))].sort();
+      const container = document.getElementById('tumor-chips');
+      container.innerHTML = '';
+      tumors.forEach(t => {
+        const chip = document.createElement('button');
+        chip.className = 'tumor-chip' + (activeTumor === t ? ' active' : '');
+        chip.textContent = t;
+        chip.addEventListener('click', () => {
+          activeTumor = activeTumor === t ? null : t;
+          activeCategory = null;
+          selectedId = null;
+          document.getElementById('detail-empty').style.display = 'flex';
+          document.getElementById('detail-content').style.display = 'none';
+          renderTumorChips();
+          renderCategories();
+          renderList();
+        });
+        container.appendChild(chip);
+      });
+    }
 
     // ── Category sidebar ──
     function getCategories() {
       const map = {};
-      allVars.forEach(v => {
+      getFilteredByTumor().forEach(v => {
         map[v.categorie] = (map[v.categorie] || 0) + 1;
       });
       return map;
+    }
+
+    function getFilteredByTumor() {
+      if (!activeTumor) return allVars;
+      return allVars.filter(v => v.tumorsoorten.includes(activeTumor));
     }
 
     function renderCategories() {
@@ -525,7 +592,7 @@
 
     // ── Filter logic ──
     function getFiltered() {
-      return allVars.filter(v => {
+      return getFilteredByTumor().filter(v => {
         const matchCat = !activeCategory || v.categorie === activeCategory;
         if (!matchCat) return false;
         if (!searchQuery) return true;
@@ -535,7 +602,7 @@
           v.beschrijving.toLowerCase().includes(q) ||
           v.categorie.toLowerCase().includes(q) ||
           v.waarden.some(w => w.label.toLowerCase().includes(q) || w.code.toLowerCase().includes(q)) ||
-          v.beschikbaar_per_tumorsoort.some(t => t.toLowerCase().includes(q))
+          v.tumorsoorten.some(t => t.toLowerCase().includes(q))
         );
       });
     }
@@ -568,10 +635,10 @@
         card.className = 'var-card' + (v.id === selectedId ? ' selected' : '');
         card.dataset.id = v.id;
 
-        const tumors = v.beschikbaar_per_tumorsoort.slice(0, 3)
+        const tumors = v.tumorsoorten.slice(0, 3)
           .map(t => `<span class="tumor-tag">${t}</span>`).join('');
-        const more = v.beschikbaar_per_tumorsoort.length > 3
-          ? `<span class="tumor-tag">+${v.beschikbaar_per_tumorsoort.length - 3}</span>` : '';
+        const more = v.tumorsoorten.length > 3
+          ? `<span class="tumor-tag">+${v.tumorsoorten.length - 3}</span>` : '';
 
         card.innerHTML = `
           <div class="var-card-top">
@@ -623,7 +690,7 @@
       }
 
       // Build tumor tags
-      const tumorTags = v.beschikbaar_per_tumorsoort
+      const tumorTags = (v.tumorsoorten || [])
         .map(t => `<span class="tumor-tag-lg">${t}</span>`).join('');
 
       dc.innerHTML = `
@@ -643,7 +710,7 @@
           </div>
 
           <div class="detail-section">
-            <div class="detail-section-label">Beschikbaar voor</div>
+            <div class="detail-section-label">Tumorsoorten</div>
             <div class="tumor-tags">${tumorTags}</div>
           </div>
 
